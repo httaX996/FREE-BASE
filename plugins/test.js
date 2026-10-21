@@ -45,7 +45,7 @@ cmd({
 },
 async (conn, mek, m, { from, quoted, reply }) => {
     try {
-        await conn.sendMessage(jid, {
+        await conn.sendMessage(from, {
   image: { url: 'https://i.ibb.co/fd7v5197/6xs-BKLp911.jpg' },
   title: 'Flash Sale',
   caption: 'Up to 50% off today only',
