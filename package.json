@@ -12,7 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "baileys-pro" : "npm:@dnuzi/baileys",
+    "@whiskeysockets/baileys" : "npm:@dnuzi/baileys",
     "@adiwajshing/keyed-db": "latest",
     "@dnuzi/baileys": "latest",
     "@dark-yasiya/yt-dl.js": "1.0.5",
