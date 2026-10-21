@@ -13,17 +13,20 @@ cmd({
 },
 async (conn, mek, m, { from, quoted, reply }) => {
     try {
-        const startTime = Date.now();
-
-        await new Promise(resolve => setTimeout(resolve, 10)); // 10ms delay
-
-        const endTime = Date.now();
-        const ping = endTime - startTime;
-
-        // Send the ping result
-        await conn.sendMessage(from, {
-            text: `*CK BOT SPEED ➟ ${ping}ms*`
-        }, { quoted: ck }); 
+        await sock.sendMessage(from, {
+  text: 'Choose one:',
+  footer: 'DanuZz',
+  nativeFlow: [
+    { text: '👋🏻 Yes', id: 'yes_1' },
+    { text: '📞 Call', call: '948123456789' },
+    { text: '📋 Copy', copy: 'PROMO123' },
+    { text: '🌐 Source', url: 'https://example.com' },
+    {
+      text: '📋 Select',
+      sections: [{ title: '✨ Section 1', rows: [{ title: '🏷️ Coupon', id: 'coupon_code' }] }]
+    }
+  ]
+}, { quoted: ck });
 
     } catch (e) {
         console.error(e);
