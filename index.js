@@ -152,7 +152,7 @@ const groupAdmins = isGroup ? await getGroupAdmins(participants) : ''
 const isBotAdmins = isGroup ? groupAdmins.includes(botNumber2) : false
 const isAdmins = isGroup ? groupAdmins.includes(sender) : false
 const isReact = m.message.reactionMessage ? true : false
-const reply = (teks) => {
+/*const reply = (teks) => {
     conn.sendMessage(from, {
         text: teks,
         contextInfo: {
@@ -168,7 +168,7 @@ const reply = (teks) => {
             }
         }
     }, { quoted: mek });
-}
+}*/
 
 
 
