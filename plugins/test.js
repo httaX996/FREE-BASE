@@ -13,7 +13,7 @@ cmd({
 },
 async (conn, mek, m, { from, quoted, reply }) => {
     try {
-        await sock.sendMessage(from, {
+        await conn.sendMessage(from, {
   text: 'Choose one:',
   footer: 'DanuZz',
   nativeFlow: [
