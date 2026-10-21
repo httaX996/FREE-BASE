@@ -13,10 +13,12 @@
   "description": "",
   "dependencies": {
     "baileys-pro" : "npm:@dnuzi/baileys",
+    "@dnuzi/baileys": "latest",
     "axios": "latest",
     "megajs": "latest",
     "pm2": "latest",
     "qrcode-terminal": "latest",
-  "express": "latest"
+    "@hapi/boom": "10.0.1",
+    "express": "latest"
   }
 }
