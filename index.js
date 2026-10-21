@@ -6,7 +6,7 @@ const {
     getContentType,
     fetchLatestBaileysVersion,
     Browsers
-} = require('@whiskeysockets/baileys');
+} = require('baileys-pro');
 const { Boom } = require('@hapi/boom');
 const pino = require('pino');
 const fs = require('fs');
