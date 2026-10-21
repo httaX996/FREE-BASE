@@ -152,23 +152,9 @@ const groupAdmins = isGroup ? await getGroupAdmins(participants) : ''
 const isBotAdmins = isGroup ? groupAdmins.includes(botNumber2) : false
 const isAdmins = isGroup ? groupAdmins.includes(sender) : false
 const isReact = m.message.reactionMessage ? true : false
-/*const reply = (teks) => {
-    conn.sendMessage(from, {
-        text: teks,
-        contextInfo: {
-            forwardingScore: 0,
-            isForwarded: true,
-            externalAdReply: {
-            // මේ ටිකම හදාගන්න 
-                title: `𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭`, 
-                body: `The Best Multi Device Whatsapp Bot.`,
-                thumbnailUrl: `https://files.catbox.moe/bf5iea.jpg`,
-                mediaType: 1,
-                renderLargerThumbnail: false
-            }
+const reply = (teks) => {
+            conn.sendMessage(from, { text: teks }, { quoted: mek })
         }
-    }, { quoted: mek });
-}*/
 
 
 
